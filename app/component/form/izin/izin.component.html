@@ -1,0 +1,37 @@
+
+<ScrollView orientation="vertical">
+    <StackLayout orientation="vertical" width="100%">
+        <Label text="Upload Document" fontWeight="900" paddingLeft="20"></Label>
+        <StackLayout (tap)="takeCam()" marginBottom="16">
+            <Image [src]="image" borderRadius="4" stretch="aspectFill" width="90%" height="200">
+            </Image>
+        </StackLayout>
+
+        <Label text="Jenis Izin" fontWeight="900" paddingLeft="20"></Label>
+        <Label [text]="dataFormIzin.jenisIzin" borderWidth="1" borderColor="#d9dfe4" width="90%" borderRadius="4"
+            padding="16" (tap)="selectIzin()" marginBottom="16">
+        </Label>
+
+        <Label text="Start Date" fontWeight="900" paddingLeft="20"></Label>
+        <DatePickerField hint="tap to choose" [(ngModel)]="dataFormIzin.startDate" name="startDate" id="startDate"
+            pickerOkText="Approve" pickerCancelText="Reject" borderWidth="1" borderColor="#d9dfe4" width="90%"
+            borderRadius="4" padding="16" pickerTitle="Start Date"></DatePickerField>
+
+        <Label text="End Date" fontWeight="900" paddingLeft="20"></Label>
+        <DatePickerField hint="tap to choose" [(ngModel)]="dataFormIzin.endDate" name="endDate" id="endDate"
+            pickerOkText="Approve" pickerCancelText="Reject" borderWidth="1" borderColor="#d9dfe4" width="90%"
+            borderRadius="4" padding="16" pickerTitle="End Date"></DatePickerField>
+
+        <Label text="Time" fontWeight="900" paddingLeft="20"></Label>
+        <TimePickerField locale="en_US" hint="select time" [(ngModel)]="dataFormIzin.time" name="time" id="time"
+            pickerOkText="OK" pickerCancelText="Cancel" pickerTitle="Select time" borderWidth="1" borderColor="#d9dfe4"
+            width="90%" borderRadius="4" padding="16"></TimePickerField>
+
+        <Label text="Alasan" fontWeight="900" paddingLeft="20"></Label>
+        <TextView hint="Alasan" [(ngModel)]="dataFormIzin.deskripsi" name="deskripsi" id="deskripsi"
+            placeholderColor="#edf1f7" padding="16">
+        </TextView>
+        <Button *ngIf="data.action == 'tambah'"  text="data.text" (tap)="save()" class="-primary -rounded-sm"></Button>
+        <Button *ngIf="data.action == 'edit'"  text="data.text" (tap)="update()" class="-primary -rounded-sm"></Button>
+    </StackLayout>
+</ScrollView>

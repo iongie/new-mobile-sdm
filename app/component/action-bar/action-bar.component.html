@@ -1,0 +1,10 @@
+<ActionBar [title]="data.title" class="bg-primary" marginBottom="12">
+    <NavigationButton icon="font://&#xf060;" class="far font-size" style="font-size: 8;" (tap)="goBack()">
+    </NavigationButton>
+    <ActionItem *ngIf="data.actionItem == 'tambah izin'" icon="font://&#xf055;" class="fal font-size"
+        style="font-size: 8;" ios.position="right" (tap)="addIzin()"></ActionItem>
+    <ActionItem *ngIf="data.actionItem == 'tambah cuti'" icon="font://&#xf055;" class="fal font-size"
+        style="font-size: 8;" ios.position="right" (tap)="addCuti()"></ActionItem>
+        <ActionItem *ngIf="data.actionItem == 'tambah reimbursement'" icon="font://&#xf055;" class="fal font-size"
+            style="font-size: 8;" ios.position="right" (tap)="addReimburse()"></ActionItem>
+</ActionBar>

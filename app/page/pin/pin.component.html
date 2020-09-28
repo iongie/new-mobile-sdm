@@ -1,0 +1,114 @@
+<FlexboxLayout class="page bg-primary" flexDirection="column" justifyContent="center" alignItems="center">
+    <Label text="Masukan PIN" fontSize="24" marginBottom="16" textWrap="true" textAlignment="center"
+        color="white"></Label>
+    <FlexboxLayout width="100%" flexDirection="row" justifyContent="center" alignItems="center">
+        <Label *ngFor="let check of check" text="&#xf111;" [class]="check.text" fontSize="28" color="white"
+            margin="8"></Label>
+    </FlexboxLayout>
+    <Label text="Lupa PIN?" fontSize="16" marginBottom="4" textWrap="true" textAlignment="center" color="white"></Label>
+    <Label text="GUNAKAN PASSWORD" fontSize="12" marginBottom="16" textWrap="true" textAlignment="center" color="white"></Label>
+    
+    <StackLayout marginBottom="30" orientation="vertical" width="100%">
+        <GridLayout columns="*,*,*" rows="*,*,*,* " width="300" height="400" marginTop="16" marginBottom="16">
+            <FlexboxLayout col="0" row="0" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(1)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="1" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="1" row="0" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(2)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="2" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="2" row="0" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(3)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="3" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="0" row="1" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(4)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="4" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="1" row="1" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(5)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="5" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="2" row="1" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(6)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="6" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="0" row="2" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(7)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="7" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="1" row="2" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(8)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="8" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="2" row="2" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(9)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="9" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="1" row="3" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="addPin(0)" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="0" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+            <FlexboxLayout col="2" row="3" flexDirection="column" justifyContent="center" alignItems="center"
+                margin="12">
+                <MDCardView class="bg-primary" (tap)="removePin()" rippleColor="#5783ff" padding="4" width="100%"
+                    height="100%" borderColor="white" borderWidth="1" borderRadius="8">
+                    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+                        <Label text="&#xf060;" class="far" textWrap="true" textAlignment="center" color="white"></Label>
+                    </FlexboxLayout>
+                </MDCardView>
+            </FlexboxLayout>
+        </GridLayout>
+    </StackLayout>
+</FlexboxLayout>

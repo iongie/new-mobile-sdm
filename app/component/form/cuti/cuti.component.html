@@ -1,0 +1,31 @@
+<ScrollView orientation="vertical" scrollBarIndicatorVisible="false">
+    <StackLayout orientation="vertical" width="100%">
+        <Label text="Upload Document" fontWeight="900" paddingLeft="20"></Label>
+        <StackLayout (tap)="takeCam()" marginBottom="16">
+            <Image [src]="image" borderRadius="4" stretch="aspectFill" width="90%" height="200">
+            </Image>
+        </StackLayout>
+
+        <Label text="Jenis Cuti" fontWeight="900" paddingLeft="20"></Label>
+        <Label [text]="dataFormCuti.jenisCuti" borderWidth="1" borderColor="#d9dfe4" width="90%" borderRadius="4"
+            padding="16" (tap)="selectCuti()" marginBottom="16">
+        </Label>
+
+        <Label text="Start Date" fontWeight="900" paddingLeft="20"></Label>
+        <DatePickerField hint="tap to choose" [(ngModel)]="dataFormCuti.startDate" name="startDate" id="startDate"
+            pickerOkText="Approve" pickerCancelText="Reject" borderWidth="1" borderColor="#d9dfe4" width="90%"
+            borderRadius="4" padding="16" pickerTitle="Start Date"></DatePickerField>
+
+        <Label text="End Date" fontWeight="900" paddingLeft="20"></Label>
+        <DatePickerField hint="tap to choose" [(ngModel)]="dataFormCuti.endDate" name="endDate" id="endDate"
+            pickerOkText="Approve" pickerCancelText="Reject" borderWidth="1" borderColor="#d9dfe4" width="90%"
+            borderRadius="4" padding="16" pickerTitle="End Date"></DatePickerField>
+
+        <Label text="Deskripsi" fontWeight="900" paddingLeft="20"></Label>
+        <TextView hint="Deskripsi" [(ngModel)]="dataFormCuti.deskripsi" name="deskripsi" id="deskripsi"
+            placeholderColor="#edf1f7" padding="16">
+        </TextView>
+        <Button *ngIf="data.action == 'tambah'"  text="data.text" (tap)="save()" class="-primary -rounded-sm"></Button>
+        <Button *ngIf="data.action == 'edit'"  text="data.text" (tap)="update()" class="-primary -rounded-sm"></Button>
+    </StackLayout>
+</ScrollView>

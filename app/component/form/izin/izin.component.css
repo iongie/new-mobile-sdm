@@ -1,0 +1,16 @@
+/* Add mobile styles for the component here.  */
+TextField {
+	border-width: 1;
+	height: 50;
+	padding-left: 5;
+	font-size: 14;
+	border-radius: 18px;
+}
+
+TextView{
+	border-width: 1;
+	height: 200;
+	padding-left: 5;
+	font-size: 14;
+	border-radius: 18px;
+}

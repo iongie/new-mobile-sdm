@@ -1,0 +1,98 @@
+<!-- !Menu -->
+<StackLayout marginBottom="4" marginTop="4">
+    <Label text="Kami disini untuk kamu!" fontSize="20" fontWeight="bold" paddingLeft="6" marginTop="4"
+        marginBottom="4"></Label>
+    <GridLayout columns="*,*" rows="*,*,*" width="100%" height="360" marginTop="4">
+        <MDCardView (tap)="absendenganQr()" col="0" row="0" rippleColor="#a0a3a9" margin="4" elevation="4" borderRadius="10">
+            <FlexboxLayout flexDirection="column" justifyContent="space-between" alignItems="flex-start" padding="8">
+                <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center" class="bg-primary"
+                    width="50" height="50" borderRadius="50">
+                    <label text="&#xf029;" class="fal" fontSize="24"></label>
+                </FlexboxLayout>
+                <StackLayout>
+                    <Label text="QR" fontSize="20" fontWeight="bold"></Label>
+                    <FlexboxLayout width="100%" flexDirection="row" justifyContent="space-between" alignItems="center">
+                        <Label text="Absen dengan QR" fontSize="12"></Label>
+                        <label text="&#xf105;" class="fal text-primary"></label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </FlexboxLayout>
+        </MDCardView>
+        <MDCardView (tap)="absenManual()" col="1" row="0" rippleColor="#a0a3a9" margin="4" elevation="4" borderRadius="10">
+            <FlexboxLayout flexDirection="column" justifyContent="space-between" alignItems="flex-start" padding="8">
+                <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center" class="bg-primary"
+                    width="50" height="50" borderRadius="50">
+                    <label text="&#xf4fd;" class="fal" fontSize="24"></label>
+                </FlexboxLayout>
+                <StackLayout>
+                    <Label text="Manual" fontSize="20" fontWeight="bold"></Label>
+                    <FlexboxLayout width="100%" flexDirection="row" justifyContent="space-between" alignItems="center">
+                        <Label text="Absen tanpa QR" fontSize="12"></Label>
+                        <label text="&#xf105;" class="fal text-primary"></label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </FlexboxLayout>
+        </MDCardView>
+        <MDCardView (tap)="listAbsen()" col="0" row="1" rippleColor="#a0a3a9" margin="4" elevation="4" borderRadius="10">
+            <FlexboxLayout flexDirection="column" justifyContent="space-between" alignItems="flex-start" padding="8">
+                <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center" class="bg-primary"
+                    width="50" height="50" borderRadius="50">
+                    <label text="&#xf022;" class="fal" fontSize="24"></label>
+                </FlexboxLayout>
+                <StackLayout>
+                    <Label text="History Absen" fontSize="20" fontWeight="bold"></Label>
+                    <FlexboxLayout width="100%" flexDirection="row" justifyContent="space-between" alignItems="center">
+                        <Label text="Ini Bukti Absen Kamu" fontSize="12"></Label>
+                        <label text="&#xf105;" class="fal text-primary"></label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </FlexboxLayout>
+        </MDCardView>
+        <MDCardView (tap)="listCuti()" col="1" row="1" rippleColor="#a0a3a9" margin="4" elevation="4" borderRadius="10">
+            <FlexboxLayout flexDirection="column" justifyContent="space-between" alignItems="flex-start" padding="8">
+                <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center" class="bg-primary"
+                    width="50" height="50" borderRadius="50">
+                    <label text="&#xf022;" class="fal" fontSize="24"></label>
+                </FlexboxLayout>
+                <StackLayout>
+                    <Label text="Cuti" fontSize="20" fontWeight="bold"></Label>
+                    <FlexboxLayout width="100%" flexDirection="row" justifyContent="space-between" alignItems="center">
+                        <Label text="Ini Bukti Cuti Kamu" fontSize="12"></Label>
+                        <label text="&#xf105;" class="fal text-primary"></label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </FlexboxLayout>
+        </MDCardView>    
+        <MDCardView (tap)="listIzin()" col="0" row="2" rippleColor="#a0a3a9" margin="4" elevation="4" borderRadius="10">
+            <FlexboxLayout flexDirection="column" justifyContent="space-between" alignItems="flex-start" padding="8">
+                <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center" class="bg-primary"
+                    width="50" height="50" borderRadius="50">
+                    <label text="&#xf022;" class="fal" fontSize="24"></label>
+                </FlexboxLayout>
+                <StackLayout>
+                    <Label text="Izin" fontSize="20" fontWeight="bold"></Label>
+                    <FlexboxLayout width="100%" flexDirection="row" justifyContent="space-between" alignItems="center">
+                        <Label text="Ini Bukti Izin Kamu" fontSize="12"></Label>
+                        <label text="&#xf105;" class="fal text-primary"></label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </FlexboxLayout>
+        </MDCardView>
+        <MDCardView (tap)="listReimbursement()" col="1" row="2" rippleColor="#a0a3a9" margin="4" elevation="4" borderRadius="10">
+            <FlexboxLayout flexDirection="column" justifyContent="space-between" alignItems="flex-start" padding="8">
+                <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center" class="bg-primary"
+                    width="50" height="50" borderRadius="50">
+                    <label text="&#xf0a3;" class="fal" fontSize="24"></label>
+                </FlexboxLayout>
+                <StackLayout>
+                    <Label text="Reimburse" fontSize="20" fontWeight="bold"></Label>
+                    <FlexboxLayout width="100%" flexDirection="row" justifyContent="space-between" alignItems="center">
+                        <Label text="Ini Bukti Reimburse Kamu" fontSize="12"></Label>
+                        <label text="&#xf105;" class="fal text-primary"></label>
+                    </FlexboxLayout>
+                </StackLayout>
+            </FlexboxLayout>
+        </MDCardView>
+    </GridLayout>
+</StackLayout>
+<!-- !Menu -->

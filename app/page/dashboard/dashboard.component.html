@@ -1,0 +1,36 @@
+<ActionBar title="test" backgroundColor="white" flat="true">
+    <StackLayout orientation="horizontal" ios:horizontalAlignment="center" android:horizontalAlignment="left">
+        <label text="&#xf2bd;" class="fal text-primary" fontSize="18"></label>
+        <Label text="Hai Gigih Santoso" fontSize="18" color="black"></Label>
+    </StackLayout>
+</ActionBar>
+<BottomNavigation selectedIndex="1">
+
+    <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+    <TabStrip class="bg-primary">
+        <TabStripItem>
+            <Label text="Profil"></Label>
+            <Image src="font://&#xf007;" class="far"></Image>
+        </TabStripItem>
+        <TabStripItem class="special">
+            <Label text="Home"></Label>
+            <Image src="font://&#xf015;" class="far"></Image>
+        </TabStripItem>
+        <TabStripItem class="special">
+            <Label text="Notifikasi"></Label>
+            <Image src="font://&#xf0e0;" class="far"></Image>
+        </TabStripItem>
+    </TabStrip>
+
+    <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+    <TabContentItem>
+        <app-profil></app-profil>
+    </TabContentItem>
+    <TabContentItem>
+        <app-home></app-home>
+    </TabContentItem>
+    <TabContentItem>
+        <app-notifikasi></app-notifikasi>
+    </TabContentItem>
+
+</BottomNavigation>

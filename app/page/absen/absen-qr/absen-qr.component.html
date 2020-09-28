@@ -1,0 +1,32 @@
+<ActionBar title="Absen" class="bg-primary" marginBottom="12">
+    <NavigationButton icon="font://&#xf060;" class="far font-size" style="font-size: 8;" (tap)="goBack()">
+    </NavigationButton>
+</ActionBar>
+<ScrollView orientation="vertical">
+    <StackLayout marginTop="8" marginBottom="8">
+        <Label textAlignment="center" (tap)="absen()" text="&#xf029;" class="fal" fontSize="128" color="black"></Label>
+        <Label textAlignment="center" text="Scan QR" class="fa" fontSize="12" color="black"></Label>
+        <StackLayout class="hr m-10"></StackLayout>
+        <StackLayout width="80%" marginLeft="8" marginRight="8" marginTop="4" marginBottom="4">
+            <Label text="Coordinat Your Location" class="fa" fontSize="12" color="black"></Label>
+            <Label [text]="dataAbsen.location" borderWidth="1" borderColor="#d9dfe4" borderRadius="4" padding="12"></Label>
+        </StackLayout>
+        <StackLayout width="80%" marginLeft="8" marginRight="8" marginTop="4" marginBottom="4">
+            <Label text="Type Absen" class="fa" fontSize="12" color="black"></Label>
+            <Label [text]="dataAbsen.type" borderWidth="1" borderColor="#d9dfe4" borderRadius="4" padding="12"></Label>
+        </StackLayout>
+        <StackLayout width="80%" marginLeft="8" marginRight="8" marginTop="4" marginBottom="4">
+            <Label text="NIK" class="fa" fontSize="12" color="black"></Label>
+            <Label [text]="dataAbsen.nik" borderWidth="1" borderColor="#d9dfe4" borderRadius="4" padding="12"></Label>
+        </StackLayout>
+        <StackLayout width="80%" marginLeft="8" marginRight="8" marginTop="4" marginBottom="4">
+            <Label text="Tanggal" class="fa" fontSize="12" color="black"></Label>
+            <Label [text]="dataAbsen.tanggal" borderWidth="1" borderColor="#d9dfe4" borderRadius="4" padding="12"></Label>
+        </StackLayout>
+        <StackLayout width="80%" marginLeft="8" marginRight="8" marginTop="4" marginBottom="4">
+            <Label text="Jam" class="fa" fontSize="12" color="black"></Label>
+            <Label [text]="dataAbsen.jam" borderWidth="1" borderColor="#d9dfe4" borderRadius="4" padding="12"></Label>
+        </StackLayout>
+        <Button text="Save" (tap)="save()" class="-primary -rounded-sm"></Button>
+    </StackLayout>
+</ScrollView>

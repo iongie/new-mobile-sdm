@@ -1,0 +1,19 @@
+<FlexboxLayout class="page" flexDirection="column" justifyContent="center" alignItems="center">
+    <StackLayout marginBottom="10" orientation="vertical" width="100%">
+        <Image src="res://icon" width="100" height="100"></Image>
+    </StackLayout>
+
+    <StackLayout marginBottom="30" orientation="vertical" width="100%">
+        <TextField [(ngModel)]="dataLogin.nik" id="nik" name="nik" hint="NIK" keyboardType="email"
+            placeholderColor="#d9dfe4" padding="16">
+        </TextField>
+        <TextField [(ngModel)]="dataLogin.password" name="password" id="password" hint="Password" keyboardType="number"
+            secure="true" placeholderColor="#d9dfe4" padding="16">
+        </TextField>
+        <Label text="Forgot Password ?" (tap)="forgotPassword()" fontWeight="900" textAlignment="center" fontSize="14">
+        </Label>
+    </StackLayout>
+    <StackLayout orientation="vertical" width="100%">
+        <Button text="Login" class="-primary -rounded-sm" (tap)="login()"></Button>
+    </StackLayout>
+</FlexboxLayout>

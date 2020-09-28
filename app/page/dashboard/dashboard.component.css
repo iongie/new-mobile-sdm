@@ -1,0 +1,5 @@
+/* Add mobile styles for the component here.  */
+TabStrip {
+    selected-item-color: white;
+    un-selected-item-color: white;
+}

@@ -1,0 +1,20 @@
+<ScrollView orientation="vertical">
+    <StackLayout orientation="vertical" width="100%">
+        <Label text="Upload Document" fontWeight="900" paddingLeft="20"></Label>
+        <StackLayout (tap)="takeCam()" marginBottom="16">
+            <Image [src]="image" borderRadius="4" stretch="aspectFill" width="90%" height="200">
+            </Image>
+        </StackLayout>
+
+        <Label text="Date" fontWeight="900" paddingLeft="20"></Label>
+        <DatePickerField hint="tap to choose" [(ngModel)]="dataFormReimburse.date" name="date" id="date"
+            pickerOkText="Approve" pickerCancelText="Reject" borderWidth="1" borderColor="#d9dfe4" width="90%"
+            borderRadius="4" padding="16" pickerTitle="Start Date"></DatePickerField>
+
+        <Label text="Deskripsi" fontWeight="900" paddingLeft="20"></Label>
+        <TextView hint="Deskripsi" [(ngModel)]="dataFormReimburse.deskripsi" name="deskripsi" id="deskripsi"
+            placeholderColor="#edf1f7" padding="16">
+        </TextView>
+        <Button text="Save" (tap)="save()" class="-primary -rounded-sm"></Button>
+    </StackLayout>
+</ScrollView>

@@ -1,0 +1,50 @@
+@import '~@nativescript/theme/css/core.css';
+@import '~@nativescript/theme/css/blue.css';
+@import './assets/css/all.css';
+
+*{
+    font-family: "CityBoysSoft", "CityBoysSoft-Regular";
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.fal {
+    font-family: "Font Awesome 5 Free", "fa-light-300";
+    font-weight: 300;
+}
+
+
+/* ! Start -- Shimmer Effect -- */
+.shimmer-effect{
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1;
+}
+
+@keyframes pulse
+{
+    0%{
+        background-color: rgba(165,165,165, .1);
+    }
+    50%{
+        background-color: rgba(165,165,165, .3);
+    }
+    100%{
+        background-color: rgba(165,165,165, .1);
+    }
+}
+
+/* ! End -- Shimmer Effect -- */

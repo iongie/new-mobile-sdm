@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "baseUrl": "./app",
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "lib": [
+      "es2017",
+      "dom",
+      "es6"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "platforms"
+  ]
+}
